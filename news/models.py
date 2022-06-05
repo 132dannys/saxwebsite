@@ -14,11 +14,12 @@ class Post(models.Model):
     published_date = models.DateTimeField(blank=True, null=True)
 
     def publish(self):
-        pass
+        self.published_date = timezone.now()
+        self.save()
 
     def __str__(self) -> str:
-        pass
+        return self.title
 
     def get_absolute_url(self):
-        pass
+        return f'/news/{self.id}'
     
