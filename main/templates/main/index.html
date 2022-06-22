@@ -1,11 +1,13 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Школа игры на саксофоне</title>
-    <link rel="stylesheet" href="/saxwebsite/main/static/main/css/style.css">
+    <title>Уроки игры на саксофоне</title>
+    <link rel="stylesheet" href="{% static 'main/css/style.css' %}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&family=Rubik:wght@300;400;500;700;800&display=swap" rel="stylesheet">
@@ -16,7 +18,7 @@
             <nav class="navigation">
                 <div class="logo">
                    <a href="#" class="logo-wrapper">
-                    <img src="/saxwebsite/main/static/main/img/logo.png" alt="logo" class="logo-icon">
+                    <img src="{% static 'main/img/logo.png' %}" alt="logo" class="logo-icon">
                    </a>
                 </div>
                 <ul class="menu">
@@ -34,7 +36,7 @@
                     </li>
                 </ul>
                 <a href="https://vk.com/away.php?utf=1&to=https%3A%2F%2Finstagram.com%2Fanatoliyaichuk%3Figshid%3DYmMyMTA2M2Y%3D" target="_blank" class="socials">
-                    <img src="/saxwebsite/main/static/main/img/instagram-icon.png" alt="instagram-icon" class="instagram-logo">
+                    <img src="{% static 'main/img/instagram-icon.png' %}" alt="instagram-icon" class="instagram-logo">
                 </a>
             </nav>
         </div>
@@ -44,7 +46,7 @@
         <div class="container">
             <div class="first-screen-wrap font-white">
                 <div class="first-screen-content">
-                    <h1 class="headline">Школа игры<br>на саксофоне</h1>
+                    <h1 class="headline">Уроки игры<br>на саксофоне</h1>
                     <a href="#" class="f-screen-btn">Записаться</a>
                 </div>
             </div>
@@ -83,7 +85,7 @@
                     </div>
                 </div>
                 <div class="types-of-lessons-last-block">
-                    <img src="/saxwebsite/main/static/main/img/instagram-icon.png" alt="sax" class="types-of-lessons-items-img">
+                    <img src="{% static 'main/img/instagram-icon.png' %}" alt="sax" class="types-of-lessons-items-img">
                     <h3 class="types-of-lessons-subtitle-last-block">
                         Уроки саксофона проводятся
                         по индивидуальной программе
